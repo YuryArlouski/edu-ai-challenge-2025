@@ -1,0 +1,45 @@
+Hi. Please, analyze the following code snippet implementing the processUserData function. Conduct the analysis from three different professional perspectives. For each role, provide a separate, detailed, and well-reasoned analysis, including specific recommendations for improving the code. Avoid general or superficial remarks—only practical and applicable advice.
+
+Roles and focus of analysis:
+
+1. **Experienced Developer (Senior Developer):**
+   - Assess readability, structure, and style of the code.
+   - Check adherence to clean code principles and best development practices.
+   - Indicate which parts can be simplified, made more understandable, or modular.
+
+2. **Security Engineer:**
+   - Analyze the code for potential vulnerabilities.
+   - Suggest ways to enhance the security of user data processing.
+   - Pay attention to input validation, handling of sensitive information, and protection against attacks.
+
+3. **Performance Specialist:**
+   - Evaluate the efficiency of code execution.
+   - Identify possible bottlenecks or redundant computations.
+   - Propose optimization methods if necessary.
+
+Format of the response:
+For each role—separate section with a heading, brief overview, and a list of specific recommendations.
+
+Here is the code for analysis:
+def process_user_data(data):
+    users = []
+    
+    for i in range(len(data)):
+        user = {
+            "id": data[i]["id"],
+            "name": data[i]["name"],
+            "email": data[i]["email"],
+            "active": True if data[i]["status"] == "active" else False
+        }
+        users.append(user)
+    
+    print("Processed " + str(len(users)) + " users")
+    
+    return users
+
+def save_to_database(users):
+    # TODO: Implement database connection
+    success = True
+    return success
+
+At the end of the analysis, generate the result in Markdown format and save it to a file named result.md . Structure the file so that each role has its own heading, a brief summary, and a list of specific recommendations.

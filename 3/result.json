@@ -1,0 +1,22 @@
+{
+  "summary": "Remote work has gained popularity, especially after the pandemic, due to benefits like flexibility, reduced commuting, and cost savings. While it offers advantages for both employees and companies, challenges such as isolation, productivity issues, and communication gaps persist. Hybrid models and evolving technology are enabling sustainable remote work practices.",
+  "sentiment": {
+    "category": "neutral",
+    "score": 0,
+    "confidence_score": 0.85
+  },
+  "metadata": {
+    "word_count": 215,
+    "language": "en",
+    "timestamp": "2025-06-05T10:48:36.954030",
+    "text_type": "informational",
+    "topic": "remote work",
+    "key_topics": [
+      "remote work",
+      "telecommuting",
+      "hybrid work model",
+      "work-life balance",
+      "productivity challenges"
+    ]
+  }
+}
