@@ -1,0 +1,46 @@
+[
+  {
+    "sentiment": "Negative",
+    "isRelevant": true,
+    "mainSubject": "Sensor reliability and product quality",
+    "positives": [],
+    "painPoints": [
+      "Sensor stops tracking intermittently",
+      "Sensor issue persists even when wired",
+      "Dongle malfunctioned in first unit",
+      "High price does not match experienced quality"
+    ],
+    "improvementSuggestions": [
+      "Improve sensor reliability",
+      "Ensure dongle functionality",
+      "Enhance quality control"
+    ],
+    "featuresMentioned": [
+      "Sensor",
+      "Dongle",
+      "Wireless performance",
+      "Wired performance",
+      "Price"
+    ],
+    "userExpertise": "Unknown"
+  },
+  {
+    "sentiment": "Mixed",
+    "isRelevant": true,
+    "mainSubject": "Value for money and product quality",
+    "positives": [
+      "Product has no flaws according to user"
+    ],
+    "painPoints": [
+      "Product is not worth the high price"
+    ],
+    "improvementSuggestions": [
+      "Adjust pricing to better reflect value proposition"
+    ],
+    "featuresMentioned": [
+      "Price",
+      "Product quality"
+    ],
+    "userExpertise": "Unknown"
+  }
+]
