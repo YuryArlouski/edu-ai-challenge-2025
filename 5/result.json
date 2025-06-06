@@ -1,0 +1,44 @@
+[
+  {
+    "sentiment": "Negative",
+    "isRelevant": true,
+    "mainSubject": "mouse",
+    "positives": [],
+    "painPoints": [
+      "sensor stops tracking",
+      "dongle didn\u2019t work",
+      "high price"
+    ],
+    "improvementSuggestions": [
+      "fix sensor tracking issues",
+      "improve dongle reliability",
+      "reduce price"
+    ],
+    "featuresMentioned": [
+      "sensor",
+      "dongle",
+      "price"
+    ],
+    "userExpertise": "Experienced"
+  },
+  {
+    "sentiment": "Mixed",
+    "isRelevant": true,
+    "mainSubject": "product",
+    "positives": [
+      "no flaws in product"
+    ],
+    "painPoints": [
+      "not worth the price"
+    ],
+    "improvementSuggestions": [
+      "reduce price"
+    ],
+    "featuresMentioned": [
+      "product quality",
+      "price",
+      "specs"
+    ],
+    "userExpertise": "Unknown"
+  }
+]

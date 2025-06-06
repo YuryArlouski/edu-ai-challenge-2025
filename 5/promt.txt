@@ -1,0 +1,52 @@
+Hi. You are a senior-level analyst. Your task is to analyze each product review and present the result as a structured JSON.
+
+**Pre-Instructions**
+Use the Few-shot learning approach to understand and classify reviews.
+Examples for FSL:
+Feedback:
+"I bought this mouse recently. I really like how it feels in my hand, but the scroll wheel gets stuck."
+Analysis:
+{
+  "sentiment": "Mixed",  "isRelevant": true,  "mainSubject": "mouse",  "positives": ["ergonomics"],  "painPoints": ["scroll wheel gets stuck"],  "improvementSuggestions": ["improve scroll wheel functionality"],  "featuresMentioned": ["ergonomics", "scroll wheel"],  "userExpertise": "Unknown"
+}
+Feedback:
+"I don't use such devices at all, just saw the ad."
+
+Analysis:
+{
+  "sentiment": "Neutral",  "isRelevant": false,  "mainSubject": null,  "positives": [],  "painPoints": [],  "improvementSuggestions": [],  "featuresMentioned": [],  "userExpertise": "Unknown"
+}
+Feedback:
+"Very accurate sensor, even at high frequencies. But the price is too high."
+Analysis:
+{
+  "sentiment": "Mixed",  "isRelevant": true,  "mainSubject": "sensor",  "positives": ["sensor accuracy"],  "painPoints": ["high price"],  "improvementSuggestions": ["reduce price"],  "featuresMentioned": ["sensor", "price"],  "userExpertise": "Experienced"
+}
+
+**Instructions:**
+
+1. Use Chain-of-Thought reasoning to determine whether the review is relevant to the product.
+2. If the review is not relevant to the product, set "isRelevant": false and leave the other fields empty.
+3. If the review is relevant, perform the following steps:
+	- Determine the overall sentiment: Positive, Neutral, Negative, or Mixed.
+	- Identify the main subject of the review.
+	- Highlight positives, pain points, improvement suggestions, and mentioned features.
+	- Assess the user’s expertise level: Experienced, Novice, or Unknown.
+
+**Required JSON Output Format:**
+{
+  "sentiment": "Positive|Neutral|Negative|Mixed",
+  "isRelevant": true|false,
+  "mainSubject": "string or null",
+  "positives": ["..."],
+  "painPoints": ["..."],
+  "improvementSuggestions": ["..."],
+  "featuresMentioned": ["..."],
+  "userExpertise": "Experienced|Novice|Unknown"
+}
+
+**Feedback to analyze:**
+Sample 1: "Sensor just stops tracking for like a half second kinda often even at 8000hz. I've also tried it plugged in and still the same problem. First one I got I had to return also because the dongle just didnt work, $150 mouse btw"
+Sample 2: "Is it worth it? It is a product with no flaws in my opinion, if you love it go for it, but its not worth the price since you'll be able to perform the same with a cheaper product with half the specs."
+
+Please, output the result strictly in the following JSON format (maintaining correct structure and punctuation) and save it to a file named result.json
