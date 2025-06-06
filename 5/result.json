@@ -2,42 +2,44 @@
   {
     "sentiment": "Negative",
     "isRelevant": true,
-    "mainSubject": "mouse",
+    "mainSubject": "Sensor reliability and product quality",
     "positives": [],
     "painPoints": [
-      "sensor stops tracking",
-      "dongle didn\u2019t work",
-      "high price"
+      "Sensor stops tracking intermittently",
+      "Sensor issue persists even when wired",
+      "Dongle malfunctioned in first unit",
+      "High price does not match experienced quality"
     ],
     "improvementSuggestions": [
-      "fix sensor tracking issues",
-      "improve dongle reliability",
-      "reduce price"
+      "Improve sensor reliability",
+      "Ensure dongle functionality",
+      "Enhance quality control"
     ],
     "featuresMentioned": [
-      "sensor",
-      "dongle",
-      "price"
+      "Sensor",
+      "Dongle",
+      "Wireless performance",
+      "Wired performance",
+      "Price"
     ],
-    "userExpertise": "Experienced"
+    "userExpertise": "Unknown"
   },
   {
     "sentiment": "Mixed",
     "isRelevant": true,
-    "mainSubject": "product",
+    "mainSubject": "Value for money and product quality",
     "positives": [
-      "no flaws in product"
+      "Product has no flaws according to user"
     ],
     "painPoints": [
-      "not worth the price"
+      "Product is not worth the high price"
     ],
     "improvementSuggestions": [
-      "reduce price"
+      "Adjust pricing to better reflect value proposition"
     ],
     "featuresMentioned": [
-      "product quality",
-      "price",
-      "specs"
+      "Price",
+      "Product quality"
     ],
     "userExpertise": "Unknown"
   }
